@@ -461,7 +461,7 @@ def handle_user_start(chat_id: int):
     active = "AKTIF" if chat_id in state.subscribers else "Tidak aktif"
 
     send_telegram(
-        f"🟦 SMC INTRADAY SIGNAL BOT\n\n"
+        f"🟦 SMC IPC INTRADAY SIGNAL BOT\n\n"
         f"Status Kamu:\n"
         f"• Paket : *{pkg}*\n"
         f"• Limit : *{limit}*\n"
@@ -474,7 +474,7 @@ def handle_user_start(chat_id: int):
 
 def handle_admin_start(chat_id: int):
     send_telegram(
-        "👑 *SMC INTRADAY — ADMIN PANEL*\n\n"
+        "👑 *SMC IPC INTRADAY — ADMIN PANEL*\n\n"
         "Bot siap. Gunakan menu di bawah untuk kontrol penuh.",
         chat_id,
         reply_markup=get_admin_reply_keyboard(),
